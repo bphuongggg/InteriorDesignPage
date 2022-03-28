@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Interior Design</title>
+  </head>
+  <body>
+    <!-- Side Bar -->
+    <nav id="sidebar">
+      <div class="sidebarTitle">
+        <h3>
+          <b
+            >Company <br />
+            Home</b
+          >
+        </h3>
+      </div>
+      <div class="sideNav-pc">
+        <a href="#">Home</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#service">Services</a>
+        <a href="#design">Designers</a>
+        <a href="#package">Packages</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <label for="nav-mobile-input" class="sideNav-mobile">
+      <i class="fa fa-bars"></i>
+      <span>Company Name</span>
+    </label>
+    <input type="checkbox" hidden class="nav-input" id="nav-mobile-input" />
+    <label
+      for="nav-mobile-input"
+      class="nav-overlay"
+      id="my-nav-overlay"
+    ></label>
+    <!-- nav responsive mobile -->
+    <nav class="nav-mobile" id="my-nav-mobile">
+      <label for="nav-mobile-input" class="closeNavMobile">
+        <p><b>Close Menu</b></p>
+      </label>
+      <h3>
+        <b
+          >Company <br />
+          Home</b
+        >
+      </h3>
+      <div class="nav-mobile-list">
+        <a href="#" onclick="hidden_nav_mobile()">Home</a>
+        <a href="#showcase" onclick="hidden_nav_mobile()">Showcase</a>
+
+        <a href="#service" onclick="hidden_nav_mobile()"> Services </a>
+        <a href="#design" onclick="hidden_nav_mobile()"> Designers </a>
+        <a href="#package" onclick="hidden_nav_mobile()"> Packages </a>
+        <a href="#contact" onclick="hidden_nav_mobile()"> Contact </a>
+      </div>
+    </nav>
+    <!-- Page Content -->
+    <div class="main">
+      <section>
+        <div id="showcase">
+          <h1 class="h1-Interior"><b>Interior Design</b></h1>
+          <h1 class="h1-Showcase"><b>Showcase.</b></h1>
+          <hr class="borderRound-Showcase" />
+        </div>
+        <!-- Photo grid -->
+        <div class="photoGrid">
+          <img
+            src="./assets/img/img1.jpg"
+            onclick="showImageClick(this)"
+            alt="Concrete meets bricks"
+          />
+          <img
+            src="./assets/img/img2.jpg"
+            onclick="showImageClick(this)"
+            alt="Light, white and tight scandinavian design"
+          />
+          <img
+            src="./assets/img/img3.jpg"
+            onclick="showImageClick(this)"
+            alt="White walls with designer chairs"
+          />
+
+          <img
+            src="./assets/img/img4.jpg"
+            onclick="showImageClick(this)"
+            alt="Windows for the atrium"
+          />
+          <img
+            src="./assets/img/img5.jpg"
+            onclick="showImageClick(this)"
+            alt="Bedroom and office in one space"
+          />
+          <img
+            src="./assets/img/img6.jpg"
+            onclick="showImageClick(this)"
+            alt="Scandinavian design"
+          />
+        </div>
+        <div
+          id="setShowImageClick"
+          class="showImage"
+          onclick="this.style.display='none'"
+        >
+          <span class="closeButton">&times;</span>
+          <img class="image-content" id="imgContent" src="" />
+          <div id="caption"></div>
+        </div>
+      </section>
+
+      <section>
+        <div id="service">
+          <h1><b>Services.</b></h1>
+          <hr class="border-service" />
+          <br />
+          <p>
+            We are a interior design service that focus on what's best for your
+            home and what's best for you!
+          </p>
+          <br />
+          <p>
+            Some text about our services - what we do and what we offer. We are
+            lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div id="design">
+          <h1><b>Designers.</b></h1>
+          <hr class="border-design" />
+          <br />
+          <p>The best team in the world.</p>
+          <br />
+          <p>
+            We are lorem ipsum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+            officia deserunt mollit anim id est laborum consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <br />
+          <p><b>Our designers are thoughtfully chosen:</b></p>
+        </div>
+        <div class="memberDesigner">
+          <div class="John">
+            <img src="./assets/img/img7.jpg" alt="" />
+            <h3>John Doe</h3>
+            <p class="positionMember">CEO & Founder</p>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+
+          <div class="Jane">
+            <img src="./assets/img/img8.jpg" alt="" />
+            <h3>Jane Doe</h3>
+            <p class="positionMember">Designer</p>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+          <div class="Mike">
+            <img src="./assets/img/img9.jpg" alt="" />
+            <h3>Mike Ross</h3>
+            <p class="positionMember">Architect</p>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="package">
+          <h1><b>Packages.</b></h1>
+          <hr class="border-package" />
+          <p>
+            Some text our prices. Lorem ipsum consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. Duis aute irure
+          </p>
+        </div>
+        <div class="package-decript">
+          <div class="package-basic">
+            <ul class="box-basic">
+              <li>Basic</li>
+              <hr />
+              <li>Floorplanning</li>
+              <li>10 hours support</li>
+              <li>Photography</li>
+              <li>20% furniture discount</li>
+              <li>Good deals</li>
+              <li>
+                <h2>$ 199</h2>
+                <br />per room
+              </li>
+              <li><button class="btn-SignUpLeft">Sign Up</button></li>
+            </ul>
+          </div>
+
+          <div class="package-bro">
+            <ul class="box-bro">
+              <li>Pro</li>
+              <li>Floorplanning</li>
+              <li>50 hours support</li>
+              <li>Photography</li>
+              <li>50% furniture discount</li>
+              <li>GREAT deals</li>
+              <li>
+                <h2>$ 249</h2>
+                <br />per room
+              </li>
+              <li><button class="btn-SignUpRight">Sign Up</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="contact">
+          <h1><b>Contact.</b></h1>
+          <hr class="border-contact" />
+          <p>
+            Do you want us to style your home? Fill out the form and fill me in
+            with the details :) We love meeting new people!
+          </p>
+          <br />
+          <form action="">
+            Name <br /><input type="text-area" class="textBox" /> <br />
+            Email <br /><input type="text" class="textBox" /> <br />
+            Message <br /><input type="text" class="textBox" /> <br />
+            <button class="btnSendMess">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer">
+        <p>
+          Powered by
+          <a href="https://www.w3schools.com/w3css/default.asp" target="blank"
+            >w3.CSS</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script>
+      function showImageClick(element) {
+        document.getElementById("setShowImageClick").style.display = "block";
+        var modalImg = document.getElementById("imgContent");
+        modalImg.src = element.src;
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        document.getElementsByClassName("closeButton")[0];
+        modal.style.display = "none";
+      }
+
+      function hidden_nav_mobile() {
+        document.querySelector("input[type='checkbox']").checked = false;
+      }
+    </script>
+  </body>
+</html>
